@@ -7,6 +7,10 @@ Cloning the repository to local machine:
 
 ```git clone https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow```
 
+Changing directory to this folder
+
+```cd Object-Classification-and-Localization-with-TensorFlow```
+
 1 ) Augmenting data:
 
 ```python create_training_data.py ```
