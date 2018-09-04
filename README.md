@@ -37,6 +37,10 @@ with tf.Session() as sess:
 # Data
 3 categories: Cucumber, eggplant and mushroom. 188 images from 3 categories were used in this project.
 
+<p align="center">
+<img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/3in1.jpg" width="800" height="400">
+</p>
+
 # Steps
 
 1 ) Collecting images via [Google Image Download](https://github.com/hardikvasa/google-images-download). Only one object must be in the image.
