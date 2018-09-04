@@ -14,9 +14,10 @@ This is a multiclass image classification & localization project for SINGLE obje
 <p align="center">
 <img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/Screenshot%20(35).png" width="800" height="400">
 </p>
-3 ) Data Augmentation(create_training_data.py). Mirroring with respect to x axis, mirroring with respect to y axis and adding noise were carried out. Hereby, data amount were folded by 8( 2 x 2 x 2 ).
 
-4 ) After data augmentation, **create_training_data.py** script is creating suitable xml files for augmented images.
+3 ) Data Augmentation (**create_training_data.py**). Mirroring with respect to x axis, mirroring with respect to y axis and adding noise were carried out. Hereby, data amount were 8-fold.
+
+4 ) After data augmentation, **create_training_data.py** script is creating suitable xml files for augmented images(in order not to label all augmented labels).
 
 5 ) Making our data tabular. Input is image that we feed into CNN. Output1 is one hot encoded classification output. Output2 is the locations of bounding boxes(regression) in **create_training_data.py**.
 
@@ -42,7 +43,7 @@ This is a multiclass image classification & localization project for SINGLE obje
 
 10 ) Training the CNN on a GPU (GTX 1050 - One epoch lasted 10 seconds approximately)
 
-11 ) Testing on unseen data colled from the Internet(in **testing_images** folder).
+11 ) Testing on unseen data (**testing_images** folder) colled from the Internet(in **test.py**).
 
 # Architecture
 
