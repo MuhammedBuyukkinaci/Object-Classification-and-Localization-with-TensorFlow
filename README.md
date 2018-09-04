@@ -5,7 +5,11 @@ This is a multiclass image classification & localization project for SINGLE obje
 
 1) Collecting images via [Google Image Download](https://github.com/hardikvasa/google-images-download). Only one object must be in the image.
 
+![Google Images Download](https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/Screenshot%20(36).png)
+
 2) Labeling images via [LabelImg](https://github.com/hardikvasa/google-images-download)
+
+![LabelImg](https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/Screenshot%20(35).png)
 
 3) Data Augmentation(create_training_data.py). Mirroring with respect to x axis, mirroring with respect to y axis and adding noise were carried out. 
 
@@ -19,10 +23,15 @@ Hereby, data amount were folded by 8( 2 x 2 x 2 )
 
 7) Separating labelled data as train and CV.
 
-8) Defining our architecture. I used [AlexNet](https://github.com/MuhammedBuyukkinaci/TensorFlow-Binary-Image-Classification-using-CNN-s/blob/master/alexnet_architecture.png) for model architecture.
+8) Defining our architecture. I used [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) for model architecture.
 
 9) Creating 2 heads for calculating loss. One head is classification loss. The other head is regression loss.
 
 10) Training the CNN on a GPU (GTX 1050 - One epoch lasted 10 seconds approximately)
 
 11) Testing on unseen data colled from the Internet.
+
+# Architecture
+
+AlexNet is used as architecture. 5 convolution layers and 3 Fully Connected Layers with 0.5 Dropout Ratio. 60 million Parameters.
+![alt text](https://github.com/MuhammedBuyukkinaci/TensorFlow-Image-Classification-Convolutional-Neural-Networks/blob/master/alexnet_architecture.png)
