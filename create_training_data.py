@@ -33,7 +33,7 @@ def mirroring_y(data):
         b_1_2 = str(227 - int(b_1[1:])) 
         changed_string = a + sep_1 + b_1_1 + b_1_2 + sep_2 + b_2 + sep_1 + c
         min_max_list.append(changed_string)
-	return list((min_max_list))
+    return list((min_max_list))
 
 def make_flipping_y():
     for i in tqdm([x for x in os.listdir() if x.split('.')[1] == 'jpg' ]):
