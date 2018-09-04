@@ -22,7 +22,15 @@ This is a multiclass image classification & localization project for SINGLE obje
 
 6 ) Determining hypermaraters in **train.py**.
 
+<p align="center">
+<img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/hyperparameters.png" 
+</p>
+
 7 ) Separating labelled data as train and CV in **train.py**.
+
+<p align="center">
+<img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/train-cv.png" 
+</p>
 
 8 ) Defining our architecture in **train.py**. I used [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) for model architecture.
 
@@ -34,7 +42,7 @@ This is a multiclass image classification & localization project for SINGLE obje
 
 10 ) Training the CNN on a GPU (GTX 1050 - One epoch lasted 10 seconds approximately)
 
-11 ) Testing on unseen data colled from the Internet.
+11 ) Testing on unseen data colled from the Internet(in **testing_images** folder).
 
 # Architecture
 
