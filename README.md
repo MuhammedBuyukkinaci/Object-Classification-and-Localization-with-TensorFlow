@@ -20,7 +20,20 @@ Cloning the repository to local machine:
 
 ```python test.py ```
 
-Training on CPU:
+# Training on CPU
+I trained on GTX 1050. 1 epoch lasted 10 seconds approximately.
+
+If you are using CPU, which I do not recommend, change the lines below in train.py:
+```
+config = tf.ConfigProto(allow_soft_placement=True)
+config.gpu_options.allow_growth = True
+config.gpu_options.allocator_type = 'BFC'
+with tf.Session(config=config) as sess:
+```
+to
+```
+with tf.Session() as sess:
+```
 
 # Steps
 
