@@ -1,0 +1,26 @@
+<annotation>
+	<folder>single eggplant</folder>
+	<filename>eggplant_59.jpg</filename>
+	<path>C:\Users\Muhammed Buyukkinaci\Downloads\single eggplant\eggplant_59.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>227</width>
+		<height>227</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>eggplant</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>8</xmin>
+			<ymin>49</ymin>
+			<xmax>213</xmax>
+			<ymax>214</ymax>
+		</bndbox>
+	</object>
+</annotation>

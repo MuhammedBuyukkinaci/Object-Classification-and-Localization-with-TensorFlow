@@ -1,0 +1,26 @@
+<annotation>
+	<folder>single mushroom</folder>
+	<filename>mushroom_12.jpg</filename>
+	<path>C:\Users\Muhammed Buyukkinaci\Downloads\single mushroom\mushroom_12.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>227</width>
+		<height>227</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>mushroom</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>87</xmin>
+			<ymin>21</ymin>
+			<xmax>205</xmax>
+			<ymax>193</ymax>
+		</bndbox>
+	</object>
+</annotation>
