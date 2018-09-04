@@ -28,6 +28,10 @@ This is a multiclass image classification & localization project for SINGLE obje
 
 9) Creating 2 heads for calculating loss in **train.py**. One head is classification loss. The other head is regression loss.
 
+<p align="center">
+<img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/losses.png" width="800" height="400">
+</p>
+
 10) Training the CNN on a GPU (GTX 1050 - One epoch lasted 10 seconds approximately)
 
 11) Testing on unseen data colled from the Internet.
