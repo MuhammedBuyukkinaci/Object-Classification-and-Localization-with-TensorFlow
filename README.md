@@ -20,7 +20,7 @@ Cloning the repository to local machine:
 ```python test.py ```
 
 # Training on CPU
-I trained on GTX 1050. 1 epoch lasted 10 seconds approximately.
+I trained on a GTX 1050. 1 epoch lasted 10 seconds approximately.
 
 If you are using CPU, which I do not recommend, change the lines below in train.py:
 ```
@@ -33,6 +33,9 @@ to
 ```
 with tf.Session() as sess:
 ```
+
+# Data
+3 categories: Cucumber, eggplant and mushroom. 188 images from 3 categories were used in this project.
 
 # Steps
 
@@ -48,7 +51,7 @@ with tf.Session() as sess:
 <img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/Screenshot%20(35).png" width="800" height="400">
 </p>
 
-3 ) Data Augmentation (**create_training_data.py**). Mirroring with respect to x axis, mirroring with respect to y axis and adding noise were carried out. Hereby, data amount were 8-fold.
+3 ) Data Augmentation (**create_training_data.py**). Mirroring with respect to x axis, mirroring with respect to y axis and adding noise were carried out. Hereby, data amount is 8-fold.
 
 <p align="center">
 <img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/sample.png" width="800" height="400">
