@@ -87,7 +87,7 @@ with tf.Session() as sess:
 
 10 ) Training the CNN on a GPU (GTX 1050 - One epoch lasted 10 seconds approximately)
 
-11 ) Testing on unseen data (**testing_images** folder) colled from the Internet(in **test.py**).
+11 ) Testing on unseen data (**testing_images** folder) collected from the Internet(in **test.py**).
 
 # Architecture
 
