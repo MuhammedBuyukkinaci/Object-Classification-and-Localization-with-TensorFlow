@@ -19,20 +19,20 @@ os.chdir(working_dir)
 
 # Defining a mirroring function for flipping wrt y
 def mirroring_y(data):
-	list_of_lists = [['xmin',19],['xmax',21]]
-	min_max_list = []
-	for v in list_of_lists:
-		sep_1 = v[0]
-		a = data[v[1]].split(sep_1)[0]
-		b = data[v[1]].split(sep_1)[1]
-		c = data[v[1]].split(sep_1)[2]
-		sep_2 = '<'
-		b_1 = b.split(sep_2)[0]
-		b_2 = b.split(sep_2)[1]
-		b_1_1 = '>'
-		b_1_2 = str(227 - int(b_1[1:])) 
-		changed_string = a + sep_1 + b_1_1 + b_1_2 + sep_2 + b_2 + sep_1 + c
-		min_max_list.append(changed_string)
+    list_of_lists = [['xmin',19],['xmax',21]]
+    min_max_list = []
+    for v in list_of_lists:
+        sep_1 = v[0]
+        a = data[v[1]].split(sep_1)[0]
+        b = data[v[1]].split(sep_1)[1]
+        c = data[v[1]].split(sep_1)[2]
+        sep_2 = '<'
+        b_1 = b.split(sep_2)[0]
+        b_2 = b.split(sep_2)[1]
+        b_1_1 = '>'
+        b_1_2 = str(227 - int(b_1[1:])) 
+        changed_string = a + sep_1 + b_1_1 + b_1_2 + sep_2 + b_2 + sep_1 + c
+        min_max_list.append(changed_string)
 	return list((min_max_list))
 
 def make_flipping_y():
@@ -56,21 +56,21 @@ make_flipping_y()
 
 # Defining a mirroring function for flipping wrt x
 def mirroring_x(data):
-	list_of_lists = [['ymin',20],['ymax',22]]
-	min_max_list = []
-	for v in list_of_lists:
-		sep_1 = v[0]
-		a = data[v[1]].split(sep_1)[0]
-		b = data[v[1]].split(sep_1)[1]
-		c = data[v[1]].split(sep_1)[2]
-		sep_2 = '<'
-		b_1 = b.split(sep_2)[0]
-		b_2 = b.split(sep_2)[1]
-		b_1_1 = '>'
-		b_1_2 = str(227 - int(b_1[1:])) 
-		changed_string = a + sep_1 + b_1_1 + b_1_2 + sep_2 + b_2 + sep_1 + c
-		min_max_list.append(changed_string)
-	return list(min_max_list)  
+    list_of_lists = [['ymin',20],['ymax',22]]
+    min_max_list = []
+    for v in list_of_lists:
+        sep_1 = v[0]
+        a = data[v[1]].split(sep_1)[0]
+        b = data[v[1]].split(sep_1)[1]
+        c = data[v[1]].split(sep_1)[2]
+        sep_2 = '<'
+        b_1 = b.split(sep_2)[0]
+        b_2 = b.split(sep_2)[1]
+        b_1_1 = '>'
+        b_1_2 = str(227 - int(b_1[1:])) 
+        changed_string = a + sep_1 + b_1_1 + b_1_2 + sep_2 + b_2 + sep_1 + c
+        min_max_list.append(changed_string)
+    return list(min_max_list)  
 
 
 def make_flipping_x():
