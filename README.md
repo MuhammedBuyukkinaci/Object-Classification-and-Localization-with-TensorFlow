@@ -1,6 +1,25 @@
 # Object-Classification-and-Localization-with-TensorFlow
 This is a multiclass image classification & localization project for SINGLE object using CNN's and TensorFlow API (no Keras) on Python3.
 
+# Training
+Training on GPU:
+
+Cloning the repository to local machine.
+```git clone https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow```
+
+1) Augmenting data:
+```python create_training_data.py ```
+
+2) Training the CNN
+```python train.py ```
+
+3) Testing on unseen data
+```python test.py ```
+
+Training on CPU:
+
+```python multiclass_classification_cpu.py ```
+
 # Steps
 
 1 ) Collecting images via [Google Image Download](https://github.com/hardikvasa/google-images-download). Only one object must be in the image.
