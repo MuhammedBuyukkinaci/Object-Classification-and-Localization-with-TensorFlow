@@ -5,15 +5,15 @@ This is a multiclass image classification & localization project for SINGLE obje
 
 1) Collecting images via [Google Image Download](https://github.com/hardikvasa/google-images-download). Only one object must be in the image.
 
-align="center"
+<p align="center">
 <img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/Screenshot%20(36).png" width="800" height="400">
-
+</p>
 
 2) Labeling images via [LabelImg](https://github.com/hardikvasa/google-images-download)
 
-align="center"
+<p align="center">
 <img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/Screenshot%20(35).png" width="800" height="400">
-
+</p>
 3) Data Augmentation(create_training_data.py). Mirroring with respect to x axis, mirroring with respect to y axis and adding noise were carried out. 
 
 Hereby, data amount were folded by 8( 2 x 2 x 2 )
