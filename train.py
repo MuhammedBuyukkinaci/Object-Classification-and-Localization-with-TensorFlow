@@ -205,6 +205,7 @@ cross_entropy = tf.multiply(tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logi
 #Defining Regression Loss
 regression_loss = tf.multiply(tf.reduce_mean(tf.square(y_pred_2 - y_true_2)),1.0)
 
+#Defining total loss
 final_loss = cross_entropy + regression_loss
 
 #Defining objective
