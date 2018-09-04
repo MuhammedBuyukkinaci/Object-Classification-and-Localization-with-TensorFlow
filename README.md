@@ -4,21 +4,23 @@ This is a multiclass image classification & localization project for SINGLE obje
 # Training
 Training on GPU:
 
-Cloning the repository to local machine.
+Cloning the repository to local machine:
+
 ```git clone https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow```
 
-1) Augmenting data:
+1 ) Augmenting data:
+
 ```python create_training_data.py ```
 
-2) Training the CNN
+2 ) Training the CNN:
+
 ```python train.py ```
 
-3) Testing on unseen data
+3 ) Testing on unseen data:
+
 ```python test.py ```
 
 Training on CPU:
-
-```python multiclass_classification_cpu.py ```
 
 # Steps
 
