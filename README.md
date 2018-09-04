@@ -1,2 +1,28 @@
 # Object-Classification-and-Localization-with-TensorFlow
-This repository is containing an object classification &amp; localization project for SINGLE object
+This is a multiclass image classification & localization project for SINGLE object using CNN's and TensorFlow API (no Keras) on Python3.
+
+# Steps
+
+1) Collecting images via [Google Image Download](https://github.com/hardikvasa/google-images-download). Only one object must be in the image.
+
+2) Labeling images via [LabelImg](https://github.com/hardikvasa/google-images-download)
+
+3) Data Augmentation(create_training_data.py). Mirroring with respect to x axis, mirroring with respect to y axis and adding noise were carried out. 
+
+Hereby, data amount were folded by 8( 2 x 2 x 2 )
+
+4) After data augmentation, create_training_data.py script is creating suitable xml files for augmented images.
+
+5) Making our data tabular. Input is image that we feed into CNN. Output1 is one hot encoded classification output. Output2 is the locations of bounding boxes(regression)
+
+6) Determining hypermaraters in train.py
+
+7) Separating labelled data as train and CV.
+
+8) Defining our architecture. I used [AlexNet](https://github.com/MuhammedBuyukkinaci/TensorFlow-Binary-Image-Classification-using-CNN-s/blob/master/alexnet_architecture.png) for model architecture.
+
+9) Creating 2 heads for calculating loss. One head is classification loss. The other head is regression loss.
+
+10) Training the CNN on a GPU (GTX 1050 - One epoch lasted 10 seconds approximately)
+
+11) Testing on unseen data colled from the Internet.
