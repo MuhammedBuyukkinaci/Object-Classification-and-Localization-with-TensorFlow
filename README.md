@@ -17,6 +17,10 @@ This is a multiclass image classification & localization project for SINGLE obje
 
 3 ) Data Augmentation (**create_training_data.py**). Mirroring with respect to x axis, mirroring with respect to y axis and adding noise were carried out. Hereby, data amount were 8-fold.
 
+<p align="center">
+<img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/sample.png" width="800" height="400">
+</p>
+
 4 ) After data augmentation, **create_training_data.py** script is creating suitable xml files for augmented images(in order not to label all augmented labels).
 
 5 ) Making our data tabular. Input is image that we feed into CNN. Output1 is one hot encoded classification output. Output2 is the locations of bounding boxes(regression) in **create_training_data.py**.
@@ -54,3 +58,5 @@ AlexNet is used as architecture. 5 convolution layers and 3 Fully Connected Laye
 <p align="center">
 <img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/preds.png" 
 </p>
+  
+  
