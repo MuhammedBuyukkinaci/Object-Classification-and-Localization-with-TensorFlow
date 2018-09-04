@@ -49,3 +49,8 @@ This is a multiclass image classification & localization project for SINGLE obje
 
 AlexNet is used as architecture. 5 convolution layers and 3 Fully Connected Layers with 0.5 Dropout Ratio. 60 million Parameters.
 ![alt text](https://github.com/MuhammedBuyukkinaci/TensorFlow-Image-Classification-Convolutional-Neural-Networks/blob/master/alexnet_architecture.png)
+
+# Predictions
+<p align="center">
+<img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/preds.png" 
+</p>
