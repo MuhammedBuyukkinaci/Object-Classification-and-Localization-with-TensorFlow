@@ -1,5 +1,5 @@
 # Object-Classification-and-Localization-with-TensorFlow
-This is a multiclass image classification & localization project for SINGLE object using CNN's and TensorFlow API (no Keras) on Python3.
+This is a multiclass image classification & localization project for SINGLE object using CNN's and TensorFlow on Python3.
 
 # Training (GPU)
 
