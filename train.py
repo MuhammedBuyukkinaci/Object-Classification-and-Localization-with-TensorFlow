@@ -249,11 +249,9 @@ def main():
             cv_loss_list = []
             cv_regression_list = []
             for v in range(0,len(cv_x)-int(len(cv_x) % validating_size),validating_size):
-                acc_on_cv,loss_on_cv,preds,coordinates = sess.run([acc,cross_entropy,
-																   tf.nn.softmax(y_pred_1),y_pred_2],
+                acc_on_cv,loss_on_cv,preds,coordinates = sess.run([acc,cross_entropy,tf.nn.softmax(y_pred_1),y_pred_2],
                 feed_dict={x:cv_x[v:v+validating_size], y_true_1:cv_y1[v:v+validating_size], y_true_2:cv_y2[v:v+validating_size],
 				  hold_prob1:1.0,hold_prob2:1.0})
-		
                 auc_on_cv = roc_auc_score(cv_y1[v:v+validating_size],preds)
                 regression_loss = np.mean(pow(cv_y2[v:v+validating_size] - coordinates , 2 ) )
                 cv_acc_list.append(acc_on_cv)
