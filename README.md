@@ -1,6 +1,10 @@
 # Object-Classification-and-Localization-with-TensorFlow
 This is a multiclass image classification & localization project for SINGLE object using CNN's and TensorFlow on Python3.
 
+# Dependencies
+
+```pip install requirements.txt```
+
 # Training (GPU)
 
 Cloning the repository to local machine:
