@@ -241,7 +241,8 @@ def main():
             for j in range(0,steps-remaining,step_size):
 				#Feeding step_size-amount data with 0.5 keeping probabilities on DROPOUT LAYERS
             	_,c = sess.run([train,final_loss],
-				feed_dict = {x:X[j:j+step_size], y_true_1:Y1[j:j+step_size],y_true_2:Y2[j:j+step_size],hold_prob1:0.5,hold_prob2:0.5})
+				feed_dict = {x:X[j:j+step_size], y_true_1:Y1[j:j+step_size],
+				y_true_2:Y2[j:j+step_size],hold_prob1:0.5,hold_prob2:0.5})
 			
 		    #Writing for loop to calculate test statistics. GTX 1050 isn't able to calculate all cv data.
             cv_auc_list = []
@@ -252,6 +253,7 @@ def main():
                 acc_on_cv,loss_on_cv,preds,coordinates = sess.run([acc,cross_entropy,tf.nn.softmax(y_pred_1),y_pred_2],
                 feed_dict={x:cv_x[v:v+validating_size], y_true_1:cv_y1[v:v+validating_size], y_true_2:cv_y2[v:v+validating_size],
 				  hold_prob1:1.0,hold_prob2:1.0})
+				
                 auc_on_cv = roc_auc_score(cv_y1[v:v+validating_size],preds)
                 regression_loss = np.mean(pow(cv_y2[v:v+validating_size] - coordinates , 2 ) )
                 cv_acc_list.append(acc_on_cv)
