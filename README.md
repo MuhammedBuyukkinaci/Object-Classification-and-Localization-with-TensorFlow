@@ -39,7 +39,7 @@ with tf.Session() as sess:
 ```
 
 # Data
-3 categories: Cucumber, eggplant and mushroom. 188 images from 3 categories were used in this project. Images used in this project are in **training_images** folder. You can also download them from [here](https://www.kaggle.com/mbkinaci/image-localization-dataset)
+3 categories: Cucumber, eggplant and mushroom. 188 images from 3 categories were used in this project. Images used in this project are in **training_images** folder. You can also download them from [here](https://www.kaggle.com/mbkinaci/image-localization-dataset).
 
 <p align="center">
 <img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/3in1.jpg" width="800" height="400">
