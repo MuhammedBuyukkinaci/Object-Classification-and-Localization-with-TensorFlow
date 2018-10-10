@@ -51,7 +51,7 @@ with tf.Session() as sess:
 
 # Steps
 
-1 ) Collecting images via [Google Image Download](https://github.com/hardikvasa/google-images-download). Only one object must be in the image.
+1 ) Collecting images via [Google Image Download](https://github.com/hardikvasa/google-images-download). Only one object must be in the image. After collecting images, you must resize them to in order to be able to label.
 
 <p align="center">
 <img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/Screenshot%20(36).png" width="800" height="400">
