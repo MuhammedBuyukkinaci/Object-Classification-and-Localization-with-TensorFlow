@@ -3,7 +3,7 @@ This is a multiclass image classification & localization project for SINGLE obje
 
 # Dependencies
 
-```pip install requirements.txt```
+```pip3 install requirements.txt```
 
 # Training (GPU)
 
@@ -17,15 +17,15 @@ Changing directory to this folder
 
 1 ) Augmenting data:
 
-```python create_training_data.py ```
+```python3 create_training_data.py ```
 
 2 ) Training the CNN:
 
-```python train.py ```
+```python3 train.py ```
 
 3 ) Testing on unseen data:
 
-```python test.py ```
+```python3 test.py ```
 
 # Training on CPU
 I trained on a GTX 1050. 1 epoch lasted 10 seconds approximately.
