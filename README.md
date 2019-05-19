@@ -57,7 +57,7 @@ with tf.Session() as sess:
 <img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/Screenshot%20(36).png" width="800" height="400">
 </p>
 
-2 ) Labeling images via [LabelImg](https://github.com/hardikvasa/google-images-download)
+2 ) Labeling images via [LabelImg](https://github.com/tzutalin/labelImg)
 
 <p align="center">
 <img src = "https://github.com/MuhammedBuyukkinaci/Object-Classification-and-Localization-with-TensorFlow/blob/master/repository_images/Screenshot%20(35).png" width="800" height="400">
